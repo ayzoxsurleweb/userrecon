@@ -1034,10 +1034,9 @@ printf "\e[1;93mNot Found!\e[0m\n"
 elif [[ $check1 == *'1'* ]]; then 
 
 printf "\e[1;92m Found!\e[0m https://www.tiktok.com/@"$username
-printf "https://www.tiktok.com/@"$username 
-printf "thank you for use" >> $username.txt
+printf "https://www.tiktok.com/@"$username  
 fi
-
+ >> $username.txt
 partial
 }
 banner
