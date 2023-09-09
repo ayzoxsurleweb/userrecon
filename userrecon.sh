@@ -1039,14 +1039,14 @@ fi
 ##tiktok
 
 printf "\e[1;77m[\e[0m\e[1;92m+\e[0m\e[1;77m] tiktok: \e[0m"
-check1=$(curl -s -i "https://www.tiktok.com/$username" -H "Accept-Language: en" -L | grep -o 'location: https://www.tiktok.com/explore' ; echo $?)
+check1=$(curl -s -i "https://www.tiktok.com/@$username" -H "Accept-Language: en" -L | grep -o 'location: https://www.tiktok.com/explore' ; echo $?)
 
 if [[ $check1 == *'0'* ]] ; then 
 printf "\e[1;93mNot Found!\e[0m\n"
 elif [[ $check1 == *'1'* ]]; then 
 
-printf "\e[1;92m Found!\e[0m https://www.tiktok.com/"$username
-printf "https://www.tiktok.com/"$username >> $username.txt
+printf "\e[1;92m Found!\e[0m https://www.tiktok.com/@"$username
+printf "https://www.tiktok.com/@"$username >> $username.txt
 fi
 
 partial
