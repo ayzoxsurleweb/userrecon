@@ -1034,22 +1034,7 @@ printf "\e[1;93mNot Found!\e[0m\n"
 elif [[ $check1 == *'1'* ]]; then 
 
 printf "\e[1;92m Found!\e[0m https://www.tiktok.com/@"$username
-printf "https://www.tiktok.com/@"$username  
-
-
-#fin
-
-printfprintf "\e[1;77m[\e[0m\e[1;92m+\e[0m\e[1;77m] thank you for use \e[0m"
-check1=$(curl -s -i "" -H "Accept-Language: en" -L | grep -o 'location: ' ; echo $?)
-
-if [[ $check1 == *'0'* ]] ; then 
-printf "\e[1;93mNot Found!\e[0m\n"
-elif [[ $check1 == *'1'* ]]; then 
-
-printf "\e[1;92m Found!\e[0m"
-printf 
-
- >> $username.txt
+printf "https://www.tiktok.com/@"$username   >> $username.txt
 fi
 
 partial
