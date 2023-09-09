@@ -996,18 +996,6 @@ printf "\e[1;92m Found!\e[0m https://ello.co/%s\n" $username
 printf "https://ello.co/%s\n" $username >> $username.txt
 fi
 
-## Tracky
-
-printf "\e[1;77m[\e[0m\e[1;92m+\e[0m\e[1;77m] Tracky: \e[0m"
-check1=$(curl -s -i "https://tracky.com/user/$username" -H "Accept-Language: en" -L | grep -o 'profile:username' ; echo $?)
-
-if [[ $check1 == *'1'* ]] ; then 
-printf "\e[1;93mNot Found!\e[0m\n"
-elif [[ $check1 == *'0'* ]]; then 
-
-printf "\e[1;92m Found!\e[0m https://tracky.com/~%s\n" $username
-printf "https://tracky.com/~%s\n" $username >> $username.txt
-fi
 
 ## Tripit
 
@@ -1046,7 +1034,8 @@ printf "\e[1;93mNot Found!\e[0m\n"
 elif [[ $check1 == *'1'* ]]; then 
 
 printf "\e[1;92m Found!\e[0m https://www.tiktok.com/@"$username
-printf "https://www.tiktok.com/@"$username >> $username.txt
+printf "https://www.tiktok.com/@"$username 
+>> $username.txt
 fi
 
 partial
