@@ -1,5 +1,5 @@
 #!/bin/bash
-# UserRecon v1.0
+# UserRecon v2.0
 # Author: @ayzoxsurleweb
 # 
 
@@ -16,8 +16,8 @@ printf "\e[1;77m | | | |___  ___ _ __|  _ \ ___  ___ ___  _ __  \e[0m\e[1;92m// 
 printf "\e[1;77m | | | / __|/ _ \ '__| |_) / _ \/ __/ _ \| '_ \ \e[0m\e[1;92m|\__\    /__/| \e[0m\n"
 printf "\e[1;77m | |_| \__ \  __/ |  |  _ <  __/ (_| (_) | | | | \e[0m\e[1;92m\    ||    / \e[0m\n"
 printf "\e[1;77m  \___/|___/\___|_|  |_| \_\___|\___\___/|_| |_|  \e[0m\e[1;92m\        / \e[0m\n"
-printf "                   \e[1;92mv1.0, Author: @ayzoxsurleweb\e[0m   \e[1;92m\  __  / \e[0m\n"
-printf "                                                    \e[1;92m'.__.' \e[0m\n"
+printf "                   \e[1;92mv1.0, Author: @ayzoxsurleweb\e[0m   \e[1;92m\  __   / \e[0m\n"
+printf "                                                                \e[1;92m'.__.' \e[0m\n"
                                                 
 
 
@@ -1024,7 +1024,7 @@ printf "https://%s.basecamphq.com/login\n" $username >> $username.txt
 
 fi
 
-##tiktok
+## tiktok
 
 printf "\e[1;77m[\e[0m\e[1;92m+\e[0m\e[1;77m] tiktok: \e[0m"
 check1=$(curl -s -i "https://www.tiktok.com/@$username" -H "Accept-Language: en" -L | grep -o 'location: https://www.tiktok.com/explore' ; echo $?)
